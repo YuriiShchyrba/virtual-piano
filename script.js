@@ -119,3 +119,20 @@ window.addEventListener('keyup',function(event){
         removeColorToKeys(k[k.length-1]);
     }
 });
+
+
+const fullScreen = document.querySelector('.fullscreen');
+
+
+fullScreen.addEventListener('click', event=>{
+    const fS = event.target.classList.contains('openfullscreen');
+    if(fS){
+        event.target.classList.remove('openfullscreen');
+        document.body.requestFullscreen();
+    }
+    if(!fS){
+        event.target.classList.add('openfullscreen');
+        document.exitFullscreen();
+    }
+
+});

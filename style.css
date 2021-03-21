@@ -95,7 +95,7 @@
     cursor: pointer;
   }
   .piano-key:hover {
-    background-color: pink;
+    background-color: #f1faee;
   }
   .keys-sharp {
     position: absolute;
@@ -119,6 +119,11 @@
     transform-origin: center top;
     margin: 0px;
   }
+
+  .piano-key.sharp:hover{
+    background-color: #495057;
+  }
+
   .piano-key.piano-key-active,
   .piano-key.sharp.piano-key-active {
     transform: scale(0.96);
@@ -156,7 +161,7 @@
   }
   .piano-key:hover::before,
   .piano-key:hover::after {
-    color: pink;
+    color: #f1faee;
   }
 
   .piano-key-active:hover::before,
